@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Resources/favicon.png">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="font-family: 'Josefin Sans', sans-serif;">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-danger" style="position: sticky; top: 0; z-index: 2;">
+        <div class="container-fluid">
+            <h1 class="navbar-brand mb-0 h1 text-light fs-3 fw-bold"><i class="fa-solid fa-headphones"></i>
+                ECHOO</h1>
+            <nav class="navbar navbar-dark bg-danger">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-danger p-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Watch Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="d-inline-flex gap-1">
+                            <button class="collapse-btn bg-danger" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Block <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body bg-danger" style="border-style: none;">
+                                <a class="nav-link" href="#">Menu Pages</a>
+                                <a class="nav-link" href="#">Header</a>
+                                <a class="nav-link" href="#">Images and Videos</a>
+                                <a class="nav-link" href="#">Sliders and Galleries</a>
+                                <a class="nav-link" href="#">Shops</a>
+                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Content</a>
+                                <a class="nav-link" href="#">Teams and Testimonials</a>
+                                <a class="nav-link" href="#">Info</a>
+                                <a class="nav-link" href="#">Forms and Maps</a>
+                                <a class="nav-link" href="#">Social</a>
+                                <a class="nav-link" href="#">Footers</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <p class="d-inline-flex gap-1">
+                            <button class="collapse-btn bg-danger" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Demo Pages <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body bg-danger" style="border-style: none;">
+                                <a class="nav-link" href="#">Headhones Shop</a>
+                                <a class="nav-link" href="#">Shoe Shop</a>
+                                <a class="nav-link" href="#">Cafe</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-brands fa-twitter text-light" id="icons"></i>
+                        <i class="fa-brands fa-facebook-f text-light" id="icons"></i>
+                        <i class="fa-brands fa-instagram text-light" id="icons"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light rounded-pill">Buy now </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="col-12">
+        <div class="imgholder p-5">
+            <div class="container-fluid branding col-6 p-5 ms-5">
+                <h4 class="fw-bold mt-5">THINKING OF BUYING A HEADPHONE?</h4>
+                <h1 class="fw-bold">Welcome to our Headphones Shop</h1>
+                <button type="button" class="btn btn-danger rounded-pill shadow w-25">Shop now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Context -->
+    <div class="container col-12 p-5">
+        <div class="contextholder m-5">
+            <h2>Find a quality and right headphones not easy</h2>
+            <p class="fs-5 ms-3"><b>Lorem ipsum dolor</b> sit amet, consectetur adipisicing elit. Asperiores porro ad
+                earum est voluptates consequatur quam. Qui id illo nisi dolores quidem maxime, ab, nobis consectetur,
+                dolore placeat similique! Animi.A nesciunt, eius dolores magnam facere consectetur totam cupiditate, rem
+                et quam commodi fugit rerum magni debitis sit quasi deleniti. Atque vel consectetur, mollitia
+                repellendus voluptas corrupti odio accusantium architecto! <a class="text-secondary" href="">Learn
+                    More...</a></p>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div id="banner">
+        <div class="textcont bg-danger p-4">
+            <p class="fw-bold fs-1 text-light">We will help you to choose the best headphones!</p>
+        </div>
+    </div>
+
+    <!-- Hottest Headphones -->
+    <div id="hphones">
+        <div class="container-fluid mt-5">
+            <h2 class="ms-5">Hottest Headphones Of The Month</h2>
+            <div class="wrapper d-flex justify-content-around mt-5">
+                <div class="imgholder1 col-3 rounded-3">
+                    <img src="./Resources/apple.webp" alt="apple">
+                    <div class="overlay">
+                        <h4>Apple AirPods Max</h4>
+                        <button type="button" class="btn btn-light rounded-pill">Buy now</button>
+                    </div>
+                </div>
+
+                <div class="imgholder1 col-3 rounded-3">
+                    <img src="./Resources/bose.webp" alt="apple">
+                    <div class="overlay">
+                        <h4>Bose Noise Canceling 700</h4>
+                        <button type="button" class="btn btn-light rounded-pill">Buy now</button>
+                    </div>
+                </div>
+
+                <div class="imgholder1 col-3 rounded-3">
+                    <img src="./Resources/sony.webp" alt="apple">
+                    <div class="overlay">
+                        <h4>Sony WH-1000XM5</h4>
+                        <button type="button" class="btn btn-light rounded-pill">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Headphone -->
+    <div id="newhp">
+        <div class="container mt-5">
+            <h2>Meet Our New Headphones</h2>
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover1.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Sony WH-1000XM4</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover2.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Bowers&Wilkins Px7</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover3.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Focal Bathys</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover4.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Sennheiser Adapt 660</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover5.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Sony WF-1000XM4</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover6.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Beats Fit Pro</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover7.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Apple AirPods Pro</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cholder">
+                    <div class="card">
+                        <div class="imgholder2">
+                            <img src="./Resources/hover8.webp" alt="">
+                        </div>
+                        <div class="cdetails">
+                            <h5>Anker Soundcore Space A40</h5>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner2 -->
+    <div id="banner2">
+        <div class="textcont2 bg-danger p-4 d-flex justify-content-around">
+            <div>
+                <p class="text-light">HURRY UP! THE OFFER IS LIMITED</p>
+                <p class="fw-bold fs-2 text-light">Like it? Pre-order and get a discount</p>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-light rounded-pill">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why us? -->
+    <div id="why">
+        <div class="container mt-5 p-5">
+            <h1 class="text-center mt-5">Why do you have to buy headphones only for us?</h1>
+            <div class="reasons d-flex justify-content-between ms-5 mt-5">
+                <div class="reasonholder col-3 m-2">
+                    <div class="overlay2">
+                        <h1 class="text-danger"><b>01.</b></h1>
+                        <p class="fw-bold">HIGH QUALITY</p>
+                    </div>
+                    <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <a
+                            class="text-secondary" href="">Learn More...</a></p>
+                </div>
+
+                <div class="reasonholder col-3 m-2">
+                    <div class="overlay2">
+                        <h1 class="text-danger"><b>02.</b></h1>
+                        <p class="fw-bold">HIGH QUALITY</p>
+                    </div>
+                    <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <a
+                            class="text-secondary" href="">Learn More...</a></p>
+                </div>
+
+                <div class="reasonholder col-3 m-2">
+                    <div class="overlay2">
+                        <h1 class="text-danger"><b>03.</b></h1>
+                        <p class="fw-bold">HIGH QUALITY</p>
+                    </div>
+                    <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <a
+                            class="text-secondary" href="">Learn More...</a></p>
+                </div>
+
+                <div class="reasonholder col-3 m-2">
+                    <div class="overlay2">
+                        <h1 class="text-danger"><b>04.</b></h1>
+                        <p class="fw-bold">HIGH QUALITY</p>
+                    </div>
+                    <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <a
+                            class="text-secondary" href="">Learn More...</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <div id="location">
+        <h6 class="text-secondary text-center fw-bold">STILL NOT CONVINCED?</h6>
+        <h1 class="text-center mt-2 fw-bold">Visit us and see yourself!</h1>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.9819349805275!2d76.33997557479387!3d10.018349090088027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ffce877d5ef%3A0x8bef6870ad11b98!2sLuminar%20Technolab%2C%20Python%2C%20MERN%20Stack%2C%20Software%20testing%2C%20Data%20Science%2C%20Artificial%20Intelligence%2C%20Asp.net%20Training%20in%20Kochi!5e0!3m2!1sen!2sin!4v1705290279328!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex justify-content-evenly mt-5">
+            <div class="col-3">
+                <img src="./Resources/img5.jpg" alt="footerimg" width="100px">
+            </div>
+            <div class="col-3 text-center">
+                <p class="fs-5 fw-light">© 2018 All Rights Reserved Terms of Use and Privacy Policy</p>
+            </div>
+            <div class="col-3 text-center">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f text-danger"></i></a>
+    
+                    <!-- Twitter -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter text-danger"></i></a>
+    
+                    <!-- Google -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google text-danger"></i></a>
+    
+                    <!-- Instagram -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram text-danger"></i></a>
+    
+                    <!-- Linkedin -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-linkedin-in text-danger"></i></a>
+    
+                    <!-- Github -->
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-github text-danger"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

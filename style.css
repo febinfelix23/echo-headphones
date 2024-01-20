@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+#navbarToggleExternalContent {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.collapse-btn{
+    border-style: none;
+}
+
+#icons{
+    font-size: x-large;
+    margin: 2vh;
+}
+
+#icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s all;
+}
+
+#buybtn{
+    color: crimson;
+}
+
+.card a{
+    color: #fff;
+}
+
+.card a:hover{
+    background-color: #fff;
+    color: crimson;
+}
+
+/* Home */
+#home{
+    width: 100%;
+    height: 90vh;
+}
+
+.imgholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(./Resources/img6.jpg);
+    background-size: cover;
+}
+
+.branding h1{
+    font-size: 4em;
+}
+
+/* Context */
+.contextholder p a{
+    text-decoration: none;
+}
+
+/* Banner */
+#banner{
+    width: 100%;
+    height: 100px;
+}
+
+.textcont{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Hottest Headphones */
+#hphones{
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+}
+.imgholder1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgholder1 img{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.overlay p{
+    text-align: inherit;
+}
+
+.imgholder1:hover .overlay{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imgholder1:hover img{
+    transform: scale(1.3);
+}
+
+/* New Headphone */
+#newhp{
+    width: 100%;
+    height: 850px;
+    padding: 60px 0;
+}
+
+.cholder{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.cholder .card{
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.05);
+    transition: 0.4s ease-in-out;
+}
+
+.cholder .card:hover{
+    height: 300px;
+}
+
+.cholder .card .imgholder2{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2); 
+}
+
+.imgholder2 img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cholder .card .cdetails{
+    position: relative;
+    margin-top: -140px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.cholder .card:hover .cdetails{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -30px;
+}
+
+#banner2{
+    width: 100%;
+    height: 150px;
+}
+
+.textcont2{
+    width: 100%;
+    height: 100%;
+}
+
+.textcont2 p{
+    margin: 15px 0 0 200px;
+}
+
+.textcont2 button{
+    margin: 40px 200px 0 0;
+}
+
+/* Why us? */
+.overlay2 h1{
+    font-size: 5rem;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+
+.overlay2 p{
+    z-index: 1;
+    width: 100%;
+}
+
+.overlay2{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reasonholder a{
+    text-decoration: none;
+}
+
+#location{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.google-map{
+    width: 100%;
+}
+
+.google-map iframe{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+footer a:hover{
+    transform: scale(1.3);
+    transition: 0.5s all;
+}
